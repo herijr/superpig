@@ -53,7 +53,7 @@
 	</div>
 	<div id="carrossel" class="col-md-8">
     <!--The div element for the map -->
-    <div id="map"></div>
+    <iframe class="embed-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d635.8042989016616!2d-49.30644022640558!3d-25.649664637486836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcff67b7269317%3A0x26832f40582aa350!2sR.+Goiabeira%2C+66+-+Eucaliptos%2C+Fazenda+Rio+Grande+-+PR%2C+83820-527!5e0!3m2!1spt-BR!2sbr!4v1532607835394" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
 	</div>
     <div class="row">
@@ -84,26 +84,5 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="bootstrap.js"></script>
-	    <script>
-// Initialize and add the map
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: -25.6493935, lng: -49.3063774};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 20, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-    </script>
-    <!--Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwnyNZLMQFOQcsm5c8qvohLe3yGHFgDDU&callback=initMap">
-    </script>
-
   </body>
 </html>
